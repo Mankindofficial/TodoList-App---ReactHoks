@@ -1,6 +1,7 @@
 .container{
   width:80%;
   margin: auto;
+  padding:10px;
   line-height:1.5em;
   font-size:0.9em;
   text-align:justify;
@@ -108,8 +109,20 @@
   border:2px white solid;
 }
 @media (max-width: 700px) {
+  .App {
+    font-size:0.7em;
+  }
+  .pages li {
+    padding:2px;
+    font-size:0.9em;
+  }
+  .pages span, {
+    font-size:0.9em;
+  }
   .container {
   	width:90%;
+    height:75vh;
+    background:#f4f4f4;
   }
   .todoList {
     width:85%;
