@@ -53,10 +53,11 @@ export function TodoList() {
 
 		return(
 			<div className="todo">
-				<input type="checkbox"
-					className="check"
-					onClick={() => dispatch({type:'toggle', payload:{id:todo.id}})} />
 				<span style={{color: todo.completed ? 'brown' : '', textDecoration: todo.completed ? 'line-through' : ''}}>{todo.title}</span>
+				<input type="submit"
+					value="Done"
+					className="toggle"
+					onClick={() => dispatch({type:'toggle', payload:{id:todo.id}})} />
 				<input type="submit"
 					className="del"
 					onClick={() => {dispatch({type:'delete', payload:{id:todo.id}})}} 
